@@ -1,0 +1,40 @@
+.side-bar{
+  position: fixed;
+  bottom: 0;
+  top: 55px;
+  left: 0;
+  width: 70px;
+  background-color: white;
+  z-index: 200;
+  padding-top: 5px;
+}
+.sidebar-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 74px;
+  flex-direction: column;
+  margin-bottom: 4px;
+  transition: 1s;
+}
+.sidebar-link .home-bar:hover .explore-bar:hover .subscription-bar:hover{
+  opacity: 1;
+  background-color: lightgray;
+  cursor: pointer;
+  font-family: arial;
+  color: red;
+  font-size: 10px;
+  
+}
+.sidebar-link img {
+  height: 24px;
+}
+.sidebar-link div {
+  font-family: Roboto, Arial;
+  font-size: 10px;
+}
+.home-bar{
+  font-family: arial;
+  color: red;
+  font-size: 10px;
+}

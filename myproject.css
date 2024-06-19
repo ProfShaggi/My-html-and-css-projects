@@ -1,0 +1,72 @@
+.container{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
+  color: white;
+  height: 60px;
+  margin-left: 80px;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.flex-container .tooltip{
+  background-color: grey;
+  color: white;
+  font-size: 13px;
+  font-family: Roboto, Arial;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+  position: absolute;
+  bottom: -50px;
+  opacity: 0;
+  transition: opacity 1s;
+  pointer-events: none;
+}
+.flex-container:hover .tooltip{
+  opacity: 1;
+}
+.upload-icon{
+  height: 40px;
+}
+.apps-icon{
+  height: 40px;
+}
+.notification-icon{
+  height: 40px;
+}
+.channel-picture{
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.notification-number{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  font-size: 15;
+  color: white;
+  font-weight: 700;
+  height: 18px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 13px;
+  opacity: 0;
+  transition: opacity 1s, background-color 1.5s;
+  pointer-events: none;
+}
+.flex-container:hover .notification-number{
+  opacity: 1;
+}

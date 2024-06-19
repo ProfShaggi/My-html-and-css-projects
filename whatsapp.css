@@ -1,0 +1,123 @@
+body{
+  background-color: red;
+}
+
+.whatsapp-container{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: black;
+  width: 340px;
+  border-style: solid;
+  border-color: seashell;
+  border-radius: 2px;
+
+}
+
+.profile-picture-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 70px;
+}
+.profile-picture-container .profile-picture{
+  height: 46px;
+  border-radius: 23px;
+  display: flex;
+  position: absolute;
+  bottom: 4px;
+  margin-right: 5px;
+  margin-left: 2px;
+
+}
+.profile-name-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.profile-name{
+  color: white;
+  font-size: 15px;
+  font-family: Roboto,arial;
+  font-weight: 600;
+}
+.messages{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 14px;
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 300;
+  white-space: nowrap;
+}
+.time-notification-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60px;
+}
+.time{
+  color: rgb(141, 218, 141);
+  font-size: 12px;
+  margin-top: -34px;
+}
+.notification-number{
+  color: black;
+  position: absolute;
+  background-color: lightgreen;
+  height: 10px;
+  margin-bottom: -15px;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 7px;
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: chartreuse;
+  height: 55px;
+  width: 347px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+.icons-container{
+  display: flex;
+  position: relative;
+  width: 40px;
+}
+.icons-container .voice-record{
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  font-family: Roboto, Arial;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+.icons-container:hover .voice-record{
+  opacity: 1;
+  cursor: pointer;
+}
+
+}
+.subscription-icon{
+  height: 20px;
+  padding-left: 20px;
+}
+.voice-icon{
+  height: 20px;
+  padding-left: 15px;
+}
+.upload-icon{
+  height: 20px;
+  padding-right: 20px;
+}
